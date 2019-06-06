@@ -47,6 +47,9 @@
                 cursor: pointer;
                 &:hover{
                     background-color: $black-squeeze;
+                    .a-bannersSection-bannersContainer-linksImg,.a-bannersSection-bannersContainer-trashImg{
+                        display: inline-block;
+                    }
                 }
                 .a-bannersSection-bannersContainer-label{
                     @include label;
@@ -92,6 +95,7 @@
                     }
                 }
                 .a-bannersSection-bannersContainer-linksImg {
+                    display: none;
                     @include main-side-icon-default;
                     filter: $filter-carrot-orange;
                     margin-right: 15px;
@@ -102,6 +106,7 @@
                     }
                 }
                 .a-bannersSection-bannersContainer-trashImg{
+                    display: none;
                     @include sidebar-icon-default;
                     margin-bottom: 2px;
                     filter: $filter-for-icons;
