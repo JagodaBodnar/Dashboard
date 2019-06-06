@@ -81,8 +81,47 @@ body{
                 height: 30px;
                 border: $main-border;   
             }
-        }
-        
+        } 
     }
     } 
+    .m-generalSection-summariseInfomation{
+        width: 50%;
+        margin: 50px auto;
+        @include flex-center-column;
+        @include respond-to(md){
+            width: 80%;
+        }
+        @include respond-to(sm){
+            width: 100%;
+        }
+        .a-generalSection-summariseInfomation-container{
+            @include flex-center;
+            width: 100%;
+            .a-generalSection-summariseInfomation-information{
+                @include flex-center-space-between;
+                width: 100%;
+                border-bottom: $main-border;
+                margin: 0 5%;
+                font-family: $text-font;
+                .a-generalSection-summariseInfomation-label{
+                    @include label;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .a-generalSection-chart{
+        margin: 50px auto;
+        padding: 10px;
+        @include respond-to(xl){
+            width: 80%;
+        }
+        @include respond-to(lg){
+            width: 80%;
+        }
+        h2{
+           @include label; 
+        }
+    }
+    
 }
