@@ -1,0 +1,118 @@
+.o-bannersSection{
+        background-color: $white;
+        min-height: 100vh;
+        margin-top: calc(#{$height-menu} + #{$margin-section});
+        margin-left: calc(#{$margin-main-section} + #{$margin-section});
+        margin-right: $margin-section;
+        margin-bottom: $margin-section;
+        @include respond-to(sm){
+        margin-left: $margin-section;
+        }
+    
+    .m-bannersSection-title{
+        @include section-title;
+        h1{
+           @include title;
+        }
+    }
+    .m-bannersSection-bannersContainer{
+        min-height: 550px;
+        @include flex-center-column;
+        &-button{
+            width: 125px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: $carrot-orange;
+            border: none;   
+            @include button-text; 
+            cursor: pointer; 
+            margin: 25px 0; 
+        }
+        &-list{
+            width: 60%;
+            list-style: none;
+            @include margin-padding;
+            padding: 0 10px;
+            @include respond-to(md){
+                width: 100%;
+            }
+            @include respond-to(sm){
+                width: 100%;
+                padding: 0 5px;
+            }
+            .a-bannersSection-bannersContainer-list{
+                border-top: $main-border;
+                @include flex-center-space-between;
+                min-height: 55px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $black-squeeze;
+                }
+                .a-bannersSection-bannersContainer-label{
+                    @include label;
+                    width: 35%;
+                    margin-left: 20px;
+                    text-align: left;
+                    @include respond-to(md){
+                        font-size: $banners-font-size;
+                        width: 20%;
+                        margin-left: 5px;
+                    }
+                    @include respond-to(sm){
+                        font-size: $banners-font-size;
+                        width: 25%;
+                        margin-left: 5px;
+                    }
+                }
+                .a-bannersSection-bannersContainer-link{
+                    width: 65%;
+                    cursor: pointer;
+                    @include flex-center-space-between;
+                    font-size: $page-header-font-size;
+                    font-family: $side-bar-font;
+                    color: $air-force-blue;
+                    @include respond-to(lg){
+                        width: 80%;
+                    }
+                    @include respond-to(md){
+                        font-size: $banners-font-size;
+                        width: 80%;
+                        margin-left: 5%;
+                    }
+                    @include respond-to(sm){
+                        font-size: $banners-font-size;
+                        width: 80%;
+                        margin-left: 5%;
+                    }
+                    &-images{
+                        margin-right: 15%;
+                        @include respond-to(sm){
+                            margin-right: 5%;
+                        }
+                    }
+                }
+                .a-bannersSection-bannersContainer-linksImg {
+                    @include main-side-icon-default;
+                    filter: $filter-carrot-orange;
+                    margin-right: 15px;
+                    vertical-align: center;
+                    @include respond-to(sm){
+                        @include sidebar-icon-small;
+                        
+                    }
+                }
+                .a-bannersSection-bannersContainer-trashImg{
+                    @include sidebar-icon-default;
+                    margin-bottom: 2px;
+                    filter: $filter-for-icons;
+                    @include respond-to(sm){
+                        @include sidebar-icon-small;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

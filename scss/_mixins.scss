@@ -1,0 +1,186 @@
+$screen-sm: 600px;
+
+// Small screen / tablet
+$screen-md: 768px;
+
+// Medium screen / desktop
+$screen-lg: 992px;
+
+// Large screen / wide desktop
+$screen-xl: 1200px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$screen-lg-max: ($screen-xl - 1);
+
+// respond-to()
+// ------------
+
+@mixin respond-to($media) {
+    @if $media == sm {
+		@media (max-width: $screen-sm-max) { @content }
+	}
+	@else if $media == md {
+		@media (min-width: $screen-md) and (max-width: $screen-md-max) { @content }
+	}
+	@else if $media == lg {
+		@media (min-width: $screen-lg) and (max-width: $screen-lg-max) { @content }
+	}
+	@else if $media == xl{
+		@media (min-width: $screen-xl) { @content }
+	}
+};
+
+@mixin flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flex-column-space-between{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+@mixin flex-centerSelf-column{
+	display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@mixin flex-center-column{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-center-flex-start{
+	display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-flex-start-column-flex-start{
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@mixin flex-center-space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin flex-space-between{
+	display: flex;
+	justify-content: space-between;
+}
+@mixin flex-center-space-around{
+	display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* TOP MENU*/
+@mixin icon-default {
+	filter: $filter-for-icons;
+  width: 18px;
+  height: 16px;
+}
+@mixin icon-small{
+	width: 12px;
+	height: 12px;
+}
+
+@mixin icon-medium{
+	width: 16px;
+	height: 14px;
+	padding-bottom: 2px;
+}
+@mixin icon-large{
+	width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+/*SIDEBAR*/
+@mixin sidebar-icon-default{
+	width: 15px;
+	height: 15px;
+}
+@mixin sidebar-icon-small {
+	width: 12px;
+	height: 12px;
+}
+@mixin sidebar-icon-medium {
+	width: 15px;
+	height: 13px;
+}
+/*MAIN MENU IN SIDEBAR*/
+@mixin main-side-icon-default{
+	width: 17px;
+	height: 17px;
+}
+@mixin itemDropdownContent{
+	top: 200%;
+  width: 101%;
+  background-color:$black-squeeze;
+  border-left: $main-border;
+  border-right: $main-border;
+  border-bottom: $main-border;
+}
+@mixin margin-padding{
+	padding: 0;
+  margin: 0;
+}
+@mixin itemName{
+	font-size: $text-font-size;
+  font-family: $side-bar-font;
+  color: $air-force-blue;
+}
+@mixin badge{
+	position: absolute;
+  padding: 3px 3px;
+  border-radius: 50%;
+  background-color: $carrot-orange;
+}
+@mixin orange-dot{
+	width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $carrot-orange;
+  margin-top: 14px;
+}
+/*TITLE*/
+@mixin title{
+	font-family: $page-header-font;
+  font-size: $page-header-font-size;
+  font-weight: $font-medium;
+  text-transform: uppercase;
+  color: $silver;
+  margin-left: $margin-section;
+}
+@mixin section-title{
+	min-height: 3rem;
+  border-bottom: $main-border;
+  @include flex-center-flex-start;
+}
+@mixin form-sections{
+	@include flex-column-space-between;
+	padding: 50px 0;
+	border-bottom: $main-border;
+}
+
+@mixin button-text{
+	font-family: $text-font;
+	font-size: $main-menu-font-size;
+	font-weight: $font-light;
+	color: $white;
+}
+@mixin label{
+	font-family: $page-header-font;
+        font-size: $page-header-font-size;
+        font-weight: $font-medium;
+        font-weight: 700;
+        color: $shady-lady;
+        min-height: 40px;
+        @include flex-center-flex-start;
+}

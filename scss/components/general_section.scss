@@ -1,0 +1,86 @@
+body{
+    background-color: $black-squeeze;
+}
+.o-generalSection{
+    background-color: $white;
+    min-height: 100vh;
+    margin-top: calc(#{$height-menu} + #{$margin-section});
+    margin-left: calc(#{$margin-main-section} + #{$margin-section});
+    margin-right: $margin-section;
+    margin-bottom: $margin-section;
+    @include respond-to(sm){
+        margin-left: $margin-section;
+        }
+    .m-generalSection-title{
+        @include section-title;
+        h1{
+           @include title;
+        }
+    } 
+    .m-generalSection-datePicker{
+        min-height: 10rem;
+        border-bottom: $main-border;
+        @include flex-center;
+        .refresh-image{
+            @include main-side-icon-default;
+            filter: $filter-white;
+            cursor: pointer;
+            margin-top: 3px;
+        }
+        button{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $carrot-orange;
+        border: none;   
+        @include button-text; 
+        cursor: pointer; 
+        margin-left: 10px;
+        outline: none;
+        }
+        .m-generalSection-datePicker-input-container{
+        border: $main-border;
+        border-radius: 3px;
+        min-height: 40px;
+        @include flex-center;
+        .date-picker{
+            padding: 0 10px;
+            @include flex-center-flex-start;
+            .img{
+                display: flex;
+                justify-content: flex-end;
+                width: 18%;
+            }
+            .date-picker-line{
+                border-left: $main-border;
+                height: 30px;
+                width: 1px;
+                margin-right: 10px;
+            }
+            .calendar-image{
+                @include sidebar-icon-default;
+                padding-top: 2px;
+                filter: $filter-for-icons;
+                cursor: pointer;
+                visibility: inherit;
+            }
+            input{
+                border: none;
+                padding-left: 2%;
+                outline: none;
+            }
+            .date-picker-input1{
+                width: 50%;
+            }
+            .date-picker-input2{
+                width: 30%;
+            }
+            .border{
+                height: 30px;
+                border: $main-border;   
+            }
+        }
+        
+    }
+    } 
+}

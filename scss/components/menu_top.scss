@@ -1,0 +1,188 @@
+/*Menu top*/
+* {
+    box-sizing: border-box;
+  }
+.o-navigation-mainmenu{
+    position: fixed;
+    top:0;
+    width: calc(100vw - #{$margin-main-section});
+    margin-left: $margin-main-section;
+    background-color: $white;
+    @include respond-to(sm) {
+        display:none;
+    }
+}
+.m-navigation-mainmenu{
+    width: 100%;
+    @include margin-padding;
+    min-height: $height-menu;
+    list-style: none;
+    .a-navigation-mainmenu_emptyspace{
+        min-height: $height-menu;
+        border-bottom: $main-border;
+    }
+    .m-navigation-mainmenu_items{
+        min-height: $height-menu;
+        list-style: none;
+        cursor: pointer;
+        padding: 0;
+        .a-navigation-mainmenu_itemWallet, .a-navigation-mainmenu_itemProfile{
+            border-left:$main-border;
+            border-bottom: $main-border;
+            min-height: $height-menu;
+            @include flex-center;
+            &.disabled{
+                display: none;
+            }
+            &.active{
+                background-color: $black-squeeze;
+                .a-navigation-mainmenu_itemBalance, .a-navigation-mainmenu_itemIcon.-wallet{
+                    color: $nero;
+                    filter: $filter-for-wallet;
+                }
+            } 
+            .a-navigation-mainmenu_itemDropdown{
+                position: relative;
+                width: 100%;
+                @include flex-center;
+                .a-navigation-mainmenu_itemBalance{
+                    color: $suva-grey;
+                    font-family: $side-bar-font;
+                    font-size: $main-menu-font-size;
+                    font-weight: $font-medium; 
+                    margin: 0 15px;
+                }
+                .a-navigation-mainmenu_itemDropdownContent{
+                    display: none;
+                    width: 100%;
+                    &.active{
+                    position: absolute;
+                    @include flex-column-space-between;
+                    @include itemDropdownContent;
+                    }
+                    a{
+                        @include flex-space-between;
+                        width: 100%;
+                        text-decoration: none;
+                        color: $shady-lady;
+                        font-size: $wallet-font-size;
+                        font-family: $side-bar-font;
+                        padding: 0 22px;
+                        .bold{
+                            font-weight: $font-bold;
+                            color: $nero;
+                        }
+                        &:hover{
+                            background-color: $gainsboro;
+                        }
+                    }
+                } 
+            }
+            .a-navigation-mainmenu_itemName{
+                @include itemName;
+                margin-left: 10px;
+            }
+        } 
+    }
+        .a-navigation-mainmenu_itemNotifications, .a-navigation-mainmenu_itemExit{
+            border-bottom: $main-border;
+            border-left:1px solid $gainsboro;
+            min-height: $height-menu;
+            @include flex-center;
+            position: relative;
+            &.disabled{
+                display: none;
+            }
+            .a-navigation-mainmenu_notification{
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                border-radius: 2px;
+                margin-top: 4px;
+                .badge {
+                    @include badge;
+                    top: -1px;
+                    right: 2px;
+                }
+            }
+        }
+        .a-navigation-mainmenu_itemNotificationMessages{
+            border-bottom: none;
+            display: none;
+            background-color: $black-squeeze;
+            &.active{
+                display: block;
+                .badge{
+                    display: none;
+                }
+            }
+            a{
+                text-decoration: none;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                .a-navigation-mainmenu_itemIcon.-exit{
+                    margin-right: 7%;
+                }
+            }
+            .a-navigation-mainmenu_itemNotificationDropdown{
+                position: relative;
+                width: 100%;
+                @include flex-space-between;
+                min-height: $height-menu;
+                border-left: $main-border;
+            }
+            .a-navigation-mainmenu_itemNotificationDropdownContent{
+                display: none;
+                width: 100%;
+                &.active{
+                position: absolute;
+                @include flex-column-space-between;
+                @include itemDropdownContent;
+                top: 100%;
+                width: 100%;
+                }
+                .a-navigation-mainmenu_messages{
+                    display: flex;
+                    justify-content: flex-start;
+                    line-height: 37px;
+                    &:hover{
+                        background-color: $gainsboro;
+                    }
+                    a{
+                        text-decoration: none;
+                        padding: 0 20px;
+                        @include itemName;
+                        font-size: $wallet-font-size;
+                        }
+                    .dot{
+                        @include orange-dot;
+                        padding: 3px 3px;
+                        margin-right: 8%;
+                    }
+                }
+            }
+        }
+        .a-navigation-mainmenu_itemIcon{
+            @include icon-default;
+            &.-small{
+                @include icon-small;
+                padding-top: 2px;
+            }
+            &.-medium{
+                @include icon-medium;
+            }
+            &.-large{
+                @include icon-large;
+            }
+        }
+}
+.m-navigation-mainmenu::after, .m-navigation-mainmenu::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+

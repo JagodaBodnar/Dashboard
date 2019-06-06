@@ -1,0 +1,144 @@
+/* Side bar scss */
+.o-navigation-sidebar{
+    width: $margin-main-section;
+    position: fixed;
+    top: 0;
+    @include respond-to(sm) {
+        width: 100%;
+    }
+    .m-navigation-sidebar_logocontainer{
+        min-height: 61px;
+        @include flex-center-space-around;
+        padding: 15px 16px;
+        background-color: $nero;
+        .a-navigation-sidebar_logo{
+            padding-left: 8px;
+        }
+        .a-navigation-sidebar_hamburger{
+            cursor: pointer;
+            margin-left: 50px;
+            @include flex-column-space-between;
+            height: 16px;
+            visibility: hidden;
+            @include respond-to(sm) {
+                visibility: visible;
+             }
+            &:hover span{
+                background: $carrot-orange;
+            }
+            &.active .hamburgerLine1{
+                transform: translateY(7px) rotate(45deg);
+            }
+            &.active .hamburgerLine3{
+                transform: translateY(-7px) rotate(-45deg);
+            }
+            &.active .hamburgerLine2{
+                opacity: 0;
+            }
+            span{
+                height: 2px;
+                width: 20px;
+                background: $suva-grey;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+    .m-navigation-sidebar{
+        background-color: $nero;
+        min-height: calc(100vh - 61px);
+        width: $margin-main-section;
+        @include margin-padding;
+        @include flex-centerSelf-column;
+        position:absolute;
+        list-style: none;
+       
+        &.-visible{
+            display: flex;
+        }
+        @include respond-to(sm) {
+           display: none;
+        }
+        .a-navigation-sidebar_item{
+            line-height: 34px;
+            padding: 0 20px;
+            border-left: 4px solid transparent;
+            @include flex-center-flex-start;
+            cursor: pointer;
+            &:hover{
+                border-left: 4px solid $carrot-orange;
+                background-color: $night-rider;
+                a{
+                    color: $gainsboro;
+                }
+                .a-navigation-sidebar_icon{
+                    filter:  $filter-for-icons-hover;
+                }
+            }
+            .a-navigation-sidebar_icon {
+                filter: $filter-for-icons;
+                margin-right: 10px;
+                padding-bottom: 2px;
+                &.-default{
+                    @include sidebar-icon-default;
+                }
+                &.-small{
+                    @include sidebar-icon-small;
+                }
+                &.-medium{
+                    @include sidebar-icon-medium;
+                }
+            }
+            a{
+                color: $suva-grey;
+                font-family: $side-bar-font;
+                font-weight: $font-light;
+                font-size: $side-bar-font-size;
+                text-decoration: none;
+            }
+            &.-line{
+                content:"";
+                display: inline-block;
+                height: 1px;
+                width: 100%;
+                border-bottom: 1px solid $night-rider;
+                padding: 0;
+                margin-top: 15px;
+            }
+        }
+        h2{
+            color: $suva-grey;
+            font-size: $side-bar-font-size;
+            font-family: $side-bar-font;
+            text-transform: uppercase;
+            font-weight: $font-medium;
+            text-align: left;
+            padding: 5px 24px;
+        }
+        .m-navigation-sidebar-manager{
+            @include flex-center-flex-start;
+            margin-bottom: 10px;
+            .m-navigation-sidebar-online{
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                border-radius: 2px;
+                padding-left: 24px;
+                .badge {
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    padding: 5px 5px;
+                    border-radius: 50%;
+                    background-color: $islamic-green;
+                  }
+            }
+            .a-navigation-sidebar_itemName{
+                @include itemName;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

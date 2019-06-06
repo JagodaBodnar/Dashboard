@@ -1,0 +1,51 @@
+/* colors*/
+$nero:#191919;
+$night-rider:#333333;
+$eclipse: #393939;
+$suva-grey: #888888;
+$shady-lady: #979797;
+$silver: #bababa;
+$gainsboro: #e3e3e3;
+$black-squeeze: #f5f5f2;
+$white: #fff;
+$carrot-orange: #f58220;
+$orange-peel: #ffa200;
+$islamic-green: #04ae00;
+$fern: #74b67a;
+$chinook: #96cc9b;
+$flamingo: #de5252;
+$geraldine: #ec7171;
+$air-force-blue: #56819f;
+$red: #ff0000;
+$filter-for-icons: invert(53%) sepia(5%) saturate(8%) hue-rotate(320deg) brightness(100%) contrast(89%);
+$filter-for-icons-hover:  invert(100%) sepia(9%) saturate(108%) hue-rotate(195deg) brightness(114%) contrast(84%);
+$filter-for-wallet: invert(2%) sepia(5%) saturate(132%) hue-rotate(314deg) brightness(98%) contrast(83%);
+$filter-carrot-orange: invert(71%) sepia(25%) saturate(6461%) hue-rotate(341deg) brightness(94%) contrast(104%);
+$filter-white: invert(100%) sepia(0%) saturate(5953%) hue-rotate(276deg) brightness(123%) contrast(113%);
+
+/*fonts*/
+$main-menu-font-size: 18px;
+$page-header-font-size: 16px;
+$side-bar-font-size: 14px;
+$text-font-size: 14px;
+$wallet-font-size: 12px;
+$banners-font-size: 12px;
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+$page-header-font: 'Roboto', sans-serif;
+$side-bar-font: 'Roboto', sans-serif;
+$section-header-font: 'Roboto', sans-serif;
+$text-font: 'Roboto', sans-serif;
+
+
+/* spaces */
+$margin-main-section: 200px;
+$height-menu: 60px;
+$margin-section: 16px;
+
+/*border*/
+$main-border: 1px solid $gainsboro;

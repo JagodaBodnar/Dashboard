@@ -1,0 +1,61 @@
+/*grid*/
+@media screen and (min-width: $screen-xl)  {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} { width: 100%/12 * $i; }
+    }
+  @for $i from 0 through 11 {
+    .col-offset-xl-#{$i} { margin-left: 100%/12 * $i; }
+    }
+  @for $i from 0 through 11 {
+    .col-off-xl-#{$i} { margin-right: 100%/12 * $i; }
+    }
+ }
+
+@media screen and (min-width: $screen-lg) and (max-width: $screen-lg-max){
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} { width: 100%/12 * $i; }
+      }
+  @for $i from 0 through 11 {
+    .col-offset-lg-#{$i} { margin-left: 100%/12 * $i; }
+      }
+  @for $i from 0 through 11 {
+    .col-off-lg-#{$i} { margin-right: 100%/12 * $i; }
+      }
+}
+
+@media screen and (min-width: $screen-md) and (max-width: $screen-md-max){
+  @for $i from 1 through 12 {
+     .col-md-#{$i} { width: 100%/12 * $i; }
+      }
+  @for $i from 0 through 11 {
+      .col-offset-md-#{$i} { margin-left: 100%/12 * $i; }
+      }
+  @for $i from 0 through 11 {
+      .col-off-md-#{$i} { margin-right: 100%/12 * $i; }
+      }
+}
+ 
+   
+@media screen and (max-width: $screen-sm-max) {
+       
+  @for $i from 1 through 12 {
+     .col-sm-#{$i} { width: 100%/12 * $i; }
+      }
+  @for $i from 0 through 11 {
+      .col-offset-sm-#{$i} { margin-left: 100%/12 * $i; }
+      }
+  @for $i from 0 through 11 {
+      .col-off-sm-#{$i} { margin-right: 100%/12 * $i; }
+      }
+}
+  
+  
+  
+  
+
+   [class*='col-'] {
+       float: left;
+       min-height: 1px;
+   }
+
+   

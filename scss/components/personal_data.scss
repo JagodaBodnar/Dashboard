@@ -1,0 +1,60 @@
+.o-personalData{
+    background-color: $white;
+    min-height: 100vh;
+    margin-top: calc(#{$height-menu} + #{$margin-section});
+    margin-left: calc(#{$margin-main-section} + #{$margin-section});
+    margin-right: $margin-section;
+    margin-bottom: $margin-section;
+    @include respond-to(sm){
+        margin-left: $margin-section;
+        }
+    .m-personalData_title{
+        @include section-title;
+        h1{
+           @include title;
+        }
+    } 
+    input[type="text"], input[type="email"]{
+
+        min-height: 40px;
+        border: $main-border;
+        border-radius: 5px;
+    }
+    label{
+        @include label;
+    }
+    .m-personalData-form{
+        width: 100%;
+        margin: 0 auto;
+        &_basicInformation{
+            min-height: 290px;
+            @include form-sections;
+        }
+        &_additionalInformation{  
+            min-height: 240px;
+            @include form-sections;
+        }
+        &_wallet{
+            min-height: 120px;
+            @include form-sections;
+        }
+        &_password{
+            min-height: 190px;
+            @include form-sections;
+        }
+        &_submit{
+            min-height: 100px;
+            @include flex-center;
+            .a-personalData-form_submitButton{
+                width: 96px;
+                height: 40px;
+                border-radius: 5px;
+                background-color: $carrot-orange;
+                border: none;   
+                @include button-text; 
+                cursor: pointer;        
+            }
+        }
+    }
+    
+}
