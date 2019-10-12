@@ -1,0 +1,71 @@
+.o-datePicker{
+            min-height: 10rem;
+            border-bottom: $main-border;
+            @include flex-center;
+        .refresh-image{
+            @include main-side-icon-default;
+            cursor: pointer;
+            margin-top: 3px;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: $carrot-orange;
+            border: none;   
+            @include button-text; 
+            cursor: pointer; 
+            margin-left: 10px;
+            outline: none;
+        }
+        .m-datePicker-input-container{
+            border: $main-border;
+            border-radius: 3px;
+            min-height: 40px;
+            @include flex-center;
+        .date-picker{
+                padding: 0 10px;
+                @include flex-center-flex-start;
+            .img{
+                display: flex;
+                justify-content: flex-end;
+                width: 10%;
+            }
+            .date-picker-line{
+                border-left: $main-border;
+                height: 30px;
+                width: 1px;
+                margin-right: 10px;
+            }
+            .calendar-image{
+                @include sidebar-icon-small; 
+                cursor: pointer;
+            }
+            input{
+                border: none;
+                padding-left: 2%;
+                outline: none;
+                font-family: $text-font;
+                font-size: $side-bar-font-size;
+            }
+            .date-picker-input1{
+                width: 50%;
+            }
+            .date-picker-input2{
+                width: 40%;
+            }
+            .border{
+                height: 30px;
+                border: $main-border;   
+            }
+        } 
+    }   
+} 
+.page-header{
+    font-family: $page-header-font;
+    font-size: $page-header-font-size;
+    font-weight: $font-medium;
+    text-transform: uppercase;
+    color: $silver;
+    
+}

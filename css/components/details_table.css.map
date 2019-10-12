@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EAEL,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI",
+"sources": ["../../scss/components/details_table.scss"],
+"names": [],
+"file": "details_table.css"
+}

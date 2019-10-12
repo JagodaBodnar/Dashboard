@@ -1,0 +1,57 @@
+.headings, .table, .buttons{
+    background-color: $white;
+    min-height: 10vh;
+    margin-top: calc(#{$height-menu} + #{$margin-section});
+    margin-left: calc(#{$margin-main-section} + #{$margin-section});
+    margin-right: $margin-section;
+    margin-bottom: $margin-section;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    padding: 20px;
+    .page-header{
+        font-family: $page-header-font;
+        font-size: $page-header-font-size;
+        font-weight: $font-medium;
+        text-transform: uppercase;
+        color: $silver;
+    }
+    .page-label{
+        @include label;
+    }
+    .page-text{
+        text-align: left;
+        font-family: $text-font;
+        font-size: $text-font-size;
+        color:$shady-lady;
+    }
+    .submit-button{
+        width: 96px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $carrot-orange;
+        border: none;   
+        @include button-text; 
+        cursor: pointer;   
+        outline: none;   
+    }
+            input[type="text"], input[type="email"]{
+        
+                min-height: 40px;
+                border: $main-border;
+                border-radius: 5px;
+                outline-color: $suva-grey;
+            }
+            label{
+                @include label;
+            }
+            .m-personalData-form{
+                width: 100%;
+                margin: 0 auto;
+                &_wallet{
+                    min-height: 120px;
+                    @include form-sections;
+                }
+            }
+
+}

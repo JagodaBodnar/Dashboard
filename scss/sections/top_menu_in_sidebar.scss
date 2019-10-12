@@ -1,4 +1,12 @@
 .m-navigation-sidebar{
+    .a-navigation-sidebar_item{
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+        }
+    }
     .a-navigation-sidebar_item.-border{
             border: none;
             padding: 0;

@@ -12,8 +12,8 @@
         
     </head>
     <body>
-             <!--SIDEBAR-->
-             <nav class="o-navigation-sidebar">
+               <!--SIDEBAR-->
+               <nav class="o-navigation-sidebar">
                 <div class="m-navigation-sidebar_logocontainer">
                         <a class="a-navigation-sidebar_logo" role="logo"><img src="images/logo.png" alt="logo"></a>
                         <a class="a-navigation-sidebar_hamburger" role="hamburger" id="hamburger">
@@ -137,66 +137,186 @@
                 </ul>
             </nav>
 
-        <!--PERSONAL DATA SECTION-->
-        <section class="o-personalData">
-                <div class="m-personalData_title">
-                    <h1>Personal data</h1>
+        <!--DETAIL SECTION-->
+            <section class="o-generalSection">
+                <div class="m-generalSection-title">
+                    <h1>Detail Statistics</h1>
                 </div>
-                <form class="m-personalData-form" action="form.html" method="get">
-                    <div class="m-personalData-form_basicInformation">
-                        <div class="a-personalData-form_basicInformation-nameContainer">
-                            <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Name</label>
-                            <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text" required>
-                        </div>
-                        <div class="a-personalData-form_basicInformation-surNameContainer">
-                            <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Surname</label>
-                            <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text" required>
-                        </div>
-                        <div class="a-personalData-form_basicInformation-emailContainer">
-                            <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3 col-sm-3">E-mail</label>
-                            <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="email" required>
-                        </div>
-                        <div class="a-personalData-form_basicInformation-phoneContainer">
-                            <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3 col-sm-3">Phone number</label>
-                            <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text" required>
+                <div class="o-datePicker">
+                    <div class="m-datePicker-input-container">
+                        <div>
+                            <div class="date-picker">
+                                <input class="date-picker-input1" type='text' placeholder="16.05.2019" onfocus="this.placeholder = ''"/>
+                                <div class="date-picker-line"></div>
+                                <input class="date-picker-input2" type='text' placeholder="16.05.2019" onfocus="this.placeholder = ''" />
+                                <div class="img"><img src=icons/calendar.svg class="calendar-image" alt="calendar-image"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="m-personalData-form_additionalInformation">
-                            <div class="a-personalData-form_additionalInformation-skypeContainer">
-                                    <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Skype</label>
-                                    <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
-                            </div>
-                            <div class="a-personalData-form_additionalInformation-icqContainer">
-                                    <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">ICQ</label>
-                                    <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
-                            </div>
-                            <div class="a-personalData-form_additionalInformation-msnContainer">
-                                    <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Msn</label>
-                                    <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
-                            </div>
-                    </div>
-                    <div class="m-personalData-form_wallet">
-                            <div class="a-personalData-form_additionalInformation-walletContainer">
-                                    <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Wallet</label>
-                                    <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
-                            </div>
-                    </div>
-                    <div class="m-personalData-form_password">
-                            <div class="a-personalData-form_additionalInformation-passwordContainer">
-                                    <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Password</label>
-                                    <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
-                            </div>
-                            <div class="a-personalData-form_additionalInformation-repeatContainer">
-                                    <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Repeat</label>
-                                    <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
-                            </div>
-                    </div>
-                    <div class="m-personalData-form_submit">
-                        <button class="a-personalData-form_submitButton" type="submit"> 
-                            Save
-                        </button>
-                    </div>
-                </form>
+                    <button class=""><img src="icons/refresh.svg" class="refresh-image" alt="refresh-image"></button>
+                </div>
+                <div class="o-payoutSection" >
+                    <table class="m-payoutSection-table detail-table">
+                        <thead>
+                            <tr class="m-payoutSection-table -heading">
+                            <th><a>Tracker name</a></th>
+                            <th>Initiated date</th>
+                            <th>Visits</th>
+                            <th>Unique</th>
+                            <th>Signups</th>
+                            <th>FTD</th>
+                            <th>Depositors</th>
+                            <th>Deposits($)</th>
+                            <th><a>Payout ($) <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png"></a></th>
+                            <th>Turnover</th>
+                            <th>Deal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight">
+                                <td>aff/sam_test</td>
+                                <td>17/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>34,425.00</td>
+                                <td>234.00</td>
+                                <td>421,342.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/leo_test</td>
+                                <td>15/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>29,436.00</td>
+                                <td>941.00</td>
+                                <td>734,435.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/sam_test</td>
+                                <td>17/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>34,425.00</td>
+                                <td>234.00</td>
+                                <td>421,342.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/leo_test</td>
+                                <td>15/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>29,436.00</td>
+                                <td>941.00</td>
+                                <td>734,435.00</td>
+                                <td>cpl(200)</td> 
+                            </tr><tr class="highlight">
+                                <td>aff/sam_test</td>
+                                <td>17/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>34,425.00</td>
+                                <td>234.00</td>
+                                <td>421,342.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/leo_test</td>
+                                <td>15/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>29,436.00</td>
+                                <td>941.00</td>
+                                <td>734,435.00</td>
+                                <td>cpl(200)</td> 
+                            </tr><tr class="highlight">
+                                <td>aff/sam_test</td>
+                                <td>17/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>34,425.00</td>
+                                <td>234.00</td>
+                                <td>421,342.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/leo_test</td>
+                                <td>15/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>29,436.00</td>
+                                <td>941.00</td>
+                                <td>734,435.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/sam_test</td>
+                                <td>17/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>34,425.00</td>
+                                <td>234.00</td>
+                                <td>421,342.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                            <tr class="highlight">
+                                <td>aff/leo_test</td>
+                                <td>15/08/02 (12:58)</td>
+                                <td>232</td>
+                                <td>114</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>29,436.00</td>
+                                <td>941.00</td>
+                                <td>734,435.00</td>
+                                <td>cpl(200)</td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="m-payoutSection-pagination">
+                        <a href="#"><img src="icons/arrow-left.svg"></a>
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#"><img src="icons/arrow-right.svg"></a>
+                      </div>
+                </div>        
             </section>
              <!--- MODALS --->
 
@@ -231,7 +351,11 @@
                 </div>
             </div>
 
+            
 
+
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

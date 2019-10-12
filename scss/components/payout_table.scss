@@ -1,0 +1,74 @@
+.o-payoutSection{
+    width: 95%;
+    margin: 0 auto;
+    @include respond-to(sm){
+        width: 100%;
+    }
+    .m-payoutSection-pagination{
+        @include flex-center;
+        margin: 20px auto;
+           img{
+               @include icon-small;
+           } 
+           a{
+            color: $shady-lady;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-family: $text-font;
+            font-size: $text-font-size;
+            @include respond-to(sm){
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
+            &.active  {
+                background-color: $gainsboro;
+                color: $eclipse;
+                border-radius: 5px;
+              }
+            &:hover:not(.active) {
+                border-radius: 5px;
+              } 
+          }
+    }
+    .m-payoutSection-table{
+        width: 100%;
+        text-align: left;
+        border-spacing: 0;
+        font-family: $text-font;
+        font-size: $text-font-size;
+        td, th{
+            border-bottom: 1px $gainsboro solid;
+            padding: 20px 20px;
+            color:$shady-lady;
+        }
+        .highlight:hover{
+            background-color: $gainsboro;
+            cursor: pointer;
+            td{
+                color: $eclipse;
+            }
+        }
+        th{
+            color: $silver;
+           a{
+            display: inline-block;
+            padding: 8px;
+                img{
+                    width:12px;
+                    height: 12px;
+                    margin-left: 10px;
+                    padding-top: 2px;
+                    fill: $shady-lady;
+                }
+                &:hover{
+                    background-color: $black-squeeze;
+                    border-radius: 5px;
+                    color: $shady-lady;
+                    
+                }
+            }
+        }   
+    }
+}

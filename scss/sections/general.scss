@@ -18,7 +18,57 @@ body{
            @include title;
         }
     } 
-    
+    .m-generalSection-datePicker{
+        min-height: 10rem;
+        border-bottom: $main-border;
+        @include flex-center;
+        .refresh-image{
+            @include main-side-icon-default;
+            cursor: pointer;
+            margin-top: 3px;
+        }
+        button{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $carrot-orange;
+        border: none;   
+        @include button-text; 
+        cursor: pointer; 
+        margin-left: 10px;
+        outline: none;
+        }
+        .m-generalSection-datePicker-input-container{
+        border: $main-border;
+        border-radius: 3px;
+        min-height: 40px;
+
+        @include flex-center;
+        .date-picker{
+            padding: 0 10px;
+            @include flex-center-flex-start;
+            .img{
+                display: flex;
+                justify-content: flex-end;
+            }
+            .date-picker-line{
+                border-left: $main-border;
+                height: 30px;
+                width: 1px;
+                margin-right: 10px;
+            }
+            .calendar-image{
+                @include sidebar-icon-small; 
+                cursor: pointer;
+            }
+            
+            .border{
+                height: 30px;
+                border: $main-border;   
+            }
+        } 
+    }
+    } 
     .m-generalSection-summariseInfomation{
         width: 50%;
         margin: 50px auto;
@@ -46,8 +96,8 @@ body{
         }
     }
     .a-generalSection-chart{
-        margin: 50px auto;
-        padding: 10px;
+        margin: 20px auto;
+        padding: 20px;
         @include respond-to(xl){
             width: 80%;
         }

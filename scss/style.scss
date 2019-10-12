@@ -2,11 +2,15 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "components/side_bar";
-@import "components/menu_top";
-@import "components/top_menu_in_sidebar";
-@import "components/general_section";
+@import "sections/guide";
+@import "sections/side_bar";
+@import "sections/menu_top";
+@import "sections/top_menu_in_sidebar";
+@import "sections/general";
+@import "components/calendar";
 @import "components/personal_data";
 @import "components/banners";
-
-
+@import "components/payout_table";
+@import "components/details_table";
+@import "components/modal_login";
+@import "components/general_section";

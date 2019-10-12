@@ -1,0 +1,12 @@
+.detail-table{
+        @include respond-to(md){
+                display: block;
+                overflow-x: auto;
+                width: 100%;   
+            }
+        @include respond-to(sm){
+                display: block;
+                overflow-x: auto;
+                width: 100%; 
+        } 
+}

@@ -7,9 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-        
-        
-        
     </head>
     <body>
         <!--SIDEBAR-->
@@ -23,16 +20,16 @@
                     </a>
             </div>
             <ul class="m-navigation-sidebar" id="a-sidebar">
-                <li class="a-navigation-sidebar_item"><img src="icons/general.svg" alt="icon-general" class="a-navigation-sidebar_icon -default"><a>General</a></li>
-                <li class="a-navigation-sidebar_item"><img src="icons/details.svg" alt="icon-details" class="a-navigation-sidebar_icon -small"><a>Details</a></li>
-                <li class="a-navigation-sidebar_item"><img src="icons/links.svg" alt="icon-links" class="a-navigation-sidebar_icon -default"><a>Links</a></li>
-                <li class="a-navigation-sidebar_item"><img src="icons/banners.svg" alt="icon-banners" class="a-navigation-sidebar_icon -medium"><a>Banners</a></li>
-                <li class="a-navigation-sidebar_item"><img src="icons/personaldata.svg" alt="icon-personaldata" class="a-navigation-sidebar_icon -default"><a>Personal data</a></li>
-                <li class="a-navigation-sidebar_item"><img src="icons/payout.svg" alt="icon-payout" class="a-navigation-sidebar_icon -medium"><a>Payout</a></li>
+                <li class="a-navigation-sidebar_item"><img src="icons/general.svg" alt="icon-general" class="a-navigation-sidebar_icon -default"><a href="#">General</a></li>
+                <li class="a-navigation-sidebar_item"><img src="icons/details.svg" alt="icon-details" class="a-navigation-sidebar_icon -small"><a href="#">Details</a></li>
+                <li class="a-navigation-sidebar_item"><img src="icons/links.svg" alt="icon-links" class="a-navigation-sidebar_icon -default"><a href="#">Links</a></li>
+                <li class="a-navigation-sidebar_item"><img src="icons/banners.svg" alt="icon-banners" class="a-navigation-sidebar_icon -medium"><a href="#">Banners</a></li>
+                <li class="a-navigation-sidebar_item"><img src="icons/personaldata.svg" alt="icon-personaldata" class="a-navigation-sidebar_icon -default"><a href="#">Personal data</a></li>
+                <li class="a-navigation-sidebar_item"><img src="icons/payout.svg" alt="icon-payout" class="a-navigation-sidebar_icon -medium"><a href="#">Payout</a></li>
                 <li class="a-navigation-sidebar_item"><img src="icons/postback.svg" alt="icon-postback" class="a-navigation-sidebar_icon -medium"><a>Postback</a></li>
                     <span class="a-navigation-sidebar_item -line"></span>
                     <h2>Your manager</h2>
-                <div class="m-navigation-sidebar-manager">
+                <div class="m-navigation-sidebar-manager" id="manager-chat">
                     <div class="m-navigation-sidebar-online">
                             <img src="images/avatar.png" alt="avatar">
                             <span class="badge"></span>
@@ -73,11 +70,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="a-navigation-sidebar_item -border">
+                <li class="a-navigation-sidebar_item -border" id="notification">
                         <div class="a-navigation-sidebar-profile"><img src="icons/profile.svg" alt="icon-profile" class="a-navigation-sidebar_icon"><a class="a-navigation-mainmenu_itemName">Leonardo Dicaprio</a></div>
                 </li>
-                <li class="a-navigation-sidebar_item -border">
-                        <img src="icons/quit.svg" alt="icon-exit" class="a-navigation-sidebar_icon -resizing">
+                <li class="a-navigation-sidebar_item -border" id="exit">
+                        <a href="index-html"><img src="icons/quit.svg" alt="icon-exit" class="a-navigation-sidebar_icon -resizing"></a>
                 </li>
             </ul>  
         </nav>
@@ -89,7 +86,7 @@
                 <li class="a-navigation-mainmenu_emptyspace col-xl-7 col-lg-5 col-md-4"></li>
                 <ul class="m-navigation-mainmenu_items col-xl-5 col-lg-7 col-md-8 col-sm-12">
                     <li class="a-navigation-mainmenu_itemWallet col-xl-5 col-lg-4 col-md-5 col-sm-5 col-sm-5">
-                        <div class="a-navigation-mainmenu_itemDropdown">
+                        <div class="a-navigation-mainmenu_itemDropdown" id="down">
                                     <img src="icons/wallet.svg" alt="icon-wallet" class="a-navigation-mainmenu_itemIcon -large -wallet">
                                     <a class="a-navigation-mainmenu_itemBalance">$1500.00</a> 
                                     <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png" alt="icon-arrow-down" id="a-arrow-down" class="a-navigation-mainmenu_itemIcon -small">
@@ -126,22 +123,156 @@
                                 </div>
                         </div>        
                     </li>
-                    <li class="a-navigation-mainmenu_itemProfile col-xl-5 col-lg-4 col-md-5 col-sm-5 " id="a-navigation-mainmenu_itemProfile">
+                    <li class="a-navigation-mainmenu_itemProfile col-xl-5 col-lg-4 col-md-5 col-sm-5" id="a-navigation-mainmenu_itemProfile">
                         <img src="icons/profile.svg" alt="icon-profile" class="a-navigation-mainmenu_itemIcon">
                         <a class="a-navigation-mainmenu_itemName">Leonardo Dicaprio</a>
                     </li>
-                    <li class="a-navigation-mainmenu_itemExit col-xl-1 col-lg-2 col-md-1 col-sm-1">
+                    <li class="a-navigation-mainmenu_itemExit col-xl-1 col-lg-2 col-md-1 col-sm-1" id="exit-button">
                         <img src="icons/quit.svg" alt="icon-exit" class="a-navigation-mainmenu_itemIcon -medium">
                     </li>  
                 </ul>
             </ul>
         </nav>
 
-        <!--GENERAL SECTION-->
-        
+        <!-- BUTTONS-->
+
+
+        <!--HEADINGS-->
+        <section class="headings">
+            <h1 class="page-header">Page header</h1>
+            <h2 class="page-label">Section header</h2>
+            <p class="page-text">Text</p>
+        </section>
+        <section class="buttons">
+                <button class="submit-button">Submit</button>
+                        <div class="o-datePicker">
+                            <div class="m-datePicker-input-container">
+                                <div>
+                                    <div class="date-picker">
+                                        <input class="date-picker-input1" type='text' placeholder="16.05.2019" onfocus="this.placeholder = ''"/>
+                                        <div class="date-picker-line"></div>
+                                        <input class="date-picker-input2" type='text' placeholder="16.05.2019" onfocus="this.placeholder = ''" />
+                                        <div class="img"><img src=icons/calendar.svg class="calendar-image" alt="calendar-image"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class=""><img src="icons/refresh.svg" class="refresh-image" alt="refresh-image"></button>
+                        </div>
+                        <form class="m-personalData-form" action="form.html" method="get">
+                                <div class="m-personalData-form_wallet">
+                                        <div class="a-personalData-form_additionalInformation-walletContainer">
+                                                <label class="col-offset-xl-4 col-xl-1 col-offset-lg-3 col-lg-2 col-offset-md-2 col-md-3 col-offset-sm-1 col-sm-3">Wallet</label>
+                                                <input class="col-xl-3 col-off-xl-4 col-lg-4 col-off-xl-3 col-md-5 col-off-md-2 col-sm-7 col-off-sm-1" type="text">
+                                        </div>
+                                </div>
+                        </form>
+        </section>
+        <section class="table">
+            <p class="page-label">Table with sorting</p>
+                <div class="o-payoutSection" >
+                        <table class="m-payoutSection-table detail-table">
+                            <thead>
+                                <tr class="m-payoutSection-table -heading">
+                                <th><a>Tracker name</a></th>
+                                <th>Initiated date</th>
+                                <th>Visits</th>
+                                <th>Unique</th>
+                                <th>Signups</th>
+                                <th>FTD</th>
+                                <th>Depositors</th>
+                                <th>Deposits($)</th>
+                                <th><a>Payout ($) <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png"></a></th>
+                                <th>Turnover</th>
+                                <th>Deal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>aff/sam_test</td>
+                                    <td>17/08/02 (12:58)</td>
+                                    <td>232</td>
+                                    <td>114</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                    <td>34,425.00</td>
+                                    <td>234.00</td>
+                                    <td>421,342.00</td>
+                                    <td>cpl(200)</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="m-payoutSection-pagination">
+                            <a href="#"><img src="icons/arrow-left.svg"></a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#"><img src="icons/arrow-right.svg"></a>
+                        </div>
+            </div>
+        <p class="page-label">Table with links</p>
+        <section class="o-bannersSection">
+                <div class="m-bannersSection-bannersContainer">
+                            <ul class="m-bannersSection-bannersContainer-list">
+                                    <li class="a-bannersSection-bannersContainer-list">
+                                        <div class="a-bannersSection-bannersContainer-label">Banner main</div>
+                                        <div class="a-bannersSection-bannersContainer-link">
+                                                <p>http://www.website.com/bannermain.gif</p>
+                                                <div class="a-bannersSection-bannersContainer-link-images">
+                                                    <img src="icons/links.svg" class="a-bannersSection-bannersContainer-linksImg">
+                                                    <img src="icons/trash.svg" class="a-bannersSection-bannersContainer-trashImg">
+                                                </div>
+                                                
+                                        </div>
+                                    </li> 
+                            </ul>
+                </div>
+            </section>
+                
+       
+            
 
         
 
+         <!--- MODALS --->
+
+         <div class="overlay" id="overlay">
+            <div class="modal" id="myModal">
+                <div class="modal-top">
+                    <h4>LOGIN</h4>
+                </div>
+                <div class="modal_login">
+                    <div class="login">
+                            <div class="img"><img src=icons/login.svg class="calendar-image" alt="calendar-image"></div>
+                            <input class="date-picker-input1" type='text' placeholder="login name" onfocus="this.placeholder = ''"/>
+                            
+                    </div>
+                    <div class="password">
+                            <div class="img"><img src=icons/password.svg class="calendar-image" alt="calendar-image"></div>
+                            <input class="date-picker-input1" type='password' placeholder="password" onfocus="this.placeholder = ''"/>  
+                    </div>
+                    <button class="js--close-modal enter-button">Enter</button>
+                </div>
+              </div>
+        
+       
+            <div class="modal" id="myModalTwo">
+                    <div class="modal-top">
+                        <h4>Do you really want to quit?</h4>
+                    </div>
+                    <div class="modal-exit">
+                        <button class="js--close-modal close-button">Cancel</button>
+                        <button class="js--close-modal enter-button">Enter</button>
+                    </div>
+            </div>
+        </div>
+            
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -44,24 +44,24 @@ $screen-lg-max: ($screen-xl - 1);
 }
 @mixin flex-centerSelf-column{
 	display: flex;
-  flex-direction: column;
-  align-self: center;
+  	flex-direction: column;
+  	align-self: center;
 }
 @mixin flex-center-column{
 	display: flex;
-  flex-direction: column;
-  align-items: center;
+ 	flex-direction: column;
+  	align-items: center;
 }
 @mixin flex-center-flex-start{
 	display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  	justify-content: flex-start;
+  	align-items: center;
 }
 @mixin flex-flex-start-column-flex-start{
 	display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
 }
 @mixin flex-center-space-between {
 	display: flex;
@@ -74,16 +74,16 @@ $screen-lg-max: ($screen-xl - 1);
 }
 @mixin flex-center-space-around{
 	display: flex;
-  justify-content: space-around;
-  align-items: center;
+  	justify-content: space-around;
+  	align-items: center;
 }
 
 
 /* TOP MENU*/
 @mixin icon-default {
 	filter: $filter-for-icons;
-  width: 18px;
-  height: 16px;
+  	width: 18px;
+  	height: 16px;
 }
 @mixin icon-small{
 	width: 12px;
@@ -97,9 +97,9 @@ $screen-lg-max: ($screen-xl - 1);
 }
 @mixin icon-large{
 	width: 16px;
-  height: 16px;
-  margin-left: 5px;
-  margin-bottom: 2px;
+  	height: 16px;
+  	margin-left: 5px;
+  	margin-bottom: 2px;
 }
 /*SIDEBAR*/
 @mixin sidebar-icon-default{
@@ -121,46 +121,46 @@ $screen-lg-max: ($screen-xl - 1);
 }
 @mixin itemDropdownContent{
 	top: 200%;
-  width: 101%;
-  background-color:$black-squeeze;
-  border-left: $main-border;
-  border-right: $main-border;
-  border-bottom: $main-border;
+  	width: 101%;
+  	background-color:$black-squeeze;
+  	border-left: $main-border;
+  	border-right: $main-border;
+  	border-bottom: $main-border;
 }
 @mixin margin-padding{
 	padding: 0;
-  margin: 0;
+  	margin: 0;
 }
 @mixin itemName{
 	font-size: $text-font-size;
-  font-family: $side-bar-font;
-  color: $air-force-blue;
+  	font-family: $side-bar-font;
+  	color: $air-force-blue;
 }
 @mixin badge{
 	position: absolute;
-  padding: 3px 3px;
-  border-radius: 50%;
-  background-color: $carrot-orange;
+  	padding: 3px 3px;
+  	border-radius: 50%;
+  	background-color: $carrot-orange;
 }
 @mixin orange-dot{
-	width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: $carrot-orange;
-  margin-top: 14px;
+  	width: 5px;
+  	height: 5px;
+  	border-radius: 50%;
+  	background-color: $carrot-orange;
+  	margin-top: 14px;
 }
 /*TITLE*/
 @mixin title{
 	font-family: $page-header-font;
-  font-size: $page-header-font-size;
-  font-weight: $font-medium;
-  text-transform: uppercase;
-  color: $silver;
-  margin-left: $margin-section;
+  	font-size: $page-header-font-size;
+  	font-weight: $font-medium;
+  	text-transform: uppercase;
+  	color: $silver;
+  	margin-left: $margin-section;
 }
 @mixin section-title{
 	min-height: 3rem;
-  border-bottom: $main-border;
+  	border-bottom: $main-border;
   @include flex-center-flex-start;
 }
 @mixin form-sections{
@@ -177,10 +177,10 @@ $screen-lg-max: ($screen-xl - 1);
 }
 @mixin label{
 	font-family: $page-header-font;
-        font-size: $page-header-font-size;
-        font-weight: $font-medium;
-        font-weight: 700;
-        color: $shady-lady;
-        min-height: 40px;
-        @include flex-center-flex-start;
+    font-size: $page-header-font-size;
+    font-weight: $font-medium;
+    font-weight: 700;
+    color: $shady-lady;
+    min-height: 40px;
+    @include flex-center-flex-start;
 }

@@ -19,6 +19,7 @@
         min-height: 40px;
         border: $main-border;
         border-radius: 5px;
+        outline-color: $suva-grey;
     }
     label{
         @include label;
@@ -52,7 +53,8 @@
                 background-color: $carrot-orange;
                 border: none;   
                 @include button-text; 
-                cursor: pointer;        
+                cursor: pointer;   
+                outline: none;     
             }
         }
     }
