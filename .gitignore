@@ -2,6 +2,7 @@ style.css.map
 .sass-cache
 style.css
 node_modules
+.DS_Store
 
 # Logs
 logs
